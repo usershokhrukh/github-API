@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 10px;
+  gap: 20px;
+}
+.main__title {
+  font-size: 40px;
+}
+.main__form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.main__input {
+  outline: none;
+  font-size: 16px;
+  padding: 15px 10px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgb(15, 14, 14);
+  border-bottom: 3px solid rgb(15, 14, 14);
+}
+.main__input:focus {
+  border: 1px solid rgb(26, 89, 199);
+  border-bottom: 3px solid rgb(66, 130, 204);
+}
+.main__f-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+}
+.main__inp-label {
+  position: absolute;
+  top: -9px;
+  background-color: white;
+  left: 9px;
+  font-size: 15px;
+  color: gray;
+}
+.main__button {
+  padding: 15px 10px;
+  border-radius: 8px;
+  background-color: rgb(26, 89, 199);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 3px solid rgb(15, 14, 14);
+  transition: all 0.3s ease-in-out;
+}
+.main__button:active {
+  transform: translateY(1px);
+  border-bottom: 1px solid rgb(15, 14, 14);
+}
+.main__result-b {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 100%;
+  max-width: 800px;
+}
+.main__result-profile {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 800px;
+}
+.main__result-img {
+  width: 20%;
+  height: 20%;
+  border-radius: 100px;
+  border: 1px solid rgb(15, 14, 14);
+}
+.main__result-pr-r {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 10px;
+}
+.main__result-pr-rt {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: gray;
+}
+.main__result-rst {
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: rgb(26, 89, 199);
+  color: white;
+  opacity: 1 !important;
+  border: 1px solid rgb(15, 14, 14);
+  border-bottom: 3px solid rgb(15, 14, 14);
+  font-weight: 600;
+}
+.main__result-pr-b {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main__result-view {
+  padding: 5px 8px;
+  font-size: 13px;
+  border-radius: 8px;
+  background-color: rgb(69, 218, 69);
+  color: white;
+  font-weight: 600;
+  border-bottom: 3px solid rgb(15, 14, 14);
+  transition: all 0.3s ease-in-out;
+}
+.main__result-view:active {
+  transform: translateY(1px);
+}
+.main__result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.main__result-repos-t {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .none {
+  display: none !important;
+}
+.main__warning {
+  color: rgb(95, 10, 10);
+  font-weight: 600;
+  background-color: rgb(243, 118, 118);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(160, 12, 12);
+}
+.main__loader {
+  color: black;
+  width: 40px;
+}
+.main .load {
+  animation-name: load;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes load {
+  0% {
+    transform: rotate(1turn);
+  }
+  100% {
+    transform: rotate(2turn);
+  }
+}
+.main__result-repos {
+  display: flex;
+  padding: 15px 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(15, 14, 14);
+  border-bottom: 3px solid rgb(15, 14, 14);
+  gap: 10px;
+  flex-direction: column;
+  align-items: start;
+  background-color: rgb(239, 248, 254);
+}
+.main__result-link-t {
+  font-size: 15px;
+  color: rgb(26, 89, 199);
+  text-decoration: underline;
+}
+.main__result-link-t:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.main__result-repos-pb {
+  background-color: rgb(68, 229, 43);
+  width: auto;
+  padding: 5px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.main__result-respos-texts {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.main__result-vn {
+  background-color: rgb(26, 89, 199);
+  padding: 5px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

@@ -3,32 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Open Github</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form class="form">
-      <input name="form-input" type="text" />
-      <button type="submit">submit</button>
-    </form>
-    <div class="result">
-      <!-- <img width="70px" height="70px" src="" alt="" />
-      <p>blog: <a href=""></a></p>
-      <p>company: </p>
-      <p>created at: </p>
-      <p>email: </p>
-      <p>followers: </p>
-      <p>following: </p>
-      <p>id: </p>
-      <p>location: </p>
-      <p>login: </p>
-      <p>public gists: </p>
-      <p>public repos: </p>
-      <p>Updated at:</p> -->
-    </div>
+    <main class="main">
+      <h2 class="main__title">Github User Finder</h2>
+      <span class="main__top">
+        <svg
+          class="main__loader none"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M12 3C16.9706 3 21 7.02944 21 12H19C19 8.13401 15.866 5 12 5V3Z"
+          ></path>
+        </svg>
+        <p class="main__warning none">Something went wrong!</p>
+      </span>
+      <form class="main__form">
+        <div class="main__f-box">
+          <input id="input" class="main__input" name="form-input" type="text" />
+          <label class="main__inp-label" for="input">Search Users...</label>
+        </div>
+        <button class="main__button" type="submit">submit</button>
+      </form>
+      <section class="main__result-b">
+        <article class="main__result-profile"></article>
+        <article class="main__result">
+          <aside class="main__result-repos">
+            <h2 class="main__result-repos-t">
+              AtgcHub
+              <span class="main__result-link-t">usershokhrukh/AtgcHub</span>
+            </h2>
+            <p class="main__result-respos-texts main__result-repos-pb">
+              public
+            </p>
+            <p class="main__result-respos-texts">description</p>
+            <p class="main__result-respos-texts">
+              <span
+                ><svg
+                  width="17"
+                  class="main__result-repos-i"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12ZM12.0003 17C14.7617 17 17.0003 14.7614 17.0003 12C17.0003 9.23858 14.7617 7 12.0003 7C9.23884 7 7.00026 9.23858 7.00026 12C7.00026 14.7614 9.23884 17 12.0003 17ZM12.0003 15C10.3434 15 9.00026 13.6569 9.00026 12C9.00026 10.3431 10.3434 9 12.0003 9C13.6571 9 15.0003 10.3431 15.0003 12C15.0003 13.6569 13.6571 15 12.0003 15Z"
+                  ></path>
+                </svg>
+              </span>
+              <span class="main__result-vn">10</span>
+            </p>
+          </aside>
+        </article>
+      </section>
+    </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
     <script type="module" src="index.js"></script>
   </body>
 </html>
+
 <!-- 
 avatar_url : "https://avatars.githubusercontent.com/u/583231?v=4" bio : null
 blog : "https://github.blog" company : "@github" created_at :
