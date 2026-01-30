@@ -156,6 +156,7 @@ try {
       following,
       location,
       public_repos,
+      html_url,
     } = response;
     const profileObj = {
       avatar_url: response.avatar_url,
@@ -167,6 +168,7 @@ try {
       location: response.location,
       public_repos: response.public_repos,
       login: response.login,
+      html_url: response.html_url,
     };
     localStorage.setItem(
       `${response.login.toLowerCase()}`,
@@ -213,7 +215,7 @@ try {
     `;
     const elMainView = document.querySelector(".main__result-view");
     elMainView.addEventListener("click", (e) => {
-      window.open(`${response?.data?.html_url}`, "_blank");
+      window.open(`${response?.html_url}`, "_blank");
     });
   }
 
