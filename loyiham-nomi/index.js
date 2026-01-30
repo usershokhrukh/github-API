@@ -165,7 +165,7 @@ try {
       followers: response.followers,
       following: response.following,
       location: response.location,
-      public_repo: response.public_repo,
+      public_repos: response.public_repos,
       login: response.login,
     };
     localStorage.setItem(
